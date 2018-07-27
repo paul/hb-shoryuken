@@ -1,0 +1,92 @@
++-----+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| t   | TID-gtcicm23g      | TID-gtcickbn4      | TID-gtcicju90      | TID-gtcicjsfg      | TID-gtcicjqlw      | TID-gtcicjor8      | TID-gtcicjnm4      |
++-----+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
+| 0.0 |                    | Start b038dab40915 | Start 3397722e4508 | Start eb9d6aa17356 | Start d6a8f024dfdf | Start d4e59132ae30 |                    |
+| 0.1 |                    | Completed 109.87ms |                    |                    |                    | Failed 37.66ms     |                    |
+| 0.2 |                    |                    |                    |                    |                    | Start 4c21f699a2ef | Start 2b70569f14d7 |
+| 0.3 |                    |                    | Completed 277.25ms | Completed 287.97ms | Completed 291.59ms |                    | Completed 110.62ms |
+| 0.4 |                    | Start 19c55ca41599 |                    |                    |                    |                    |                    |
+| 0.5 |                    |                    | Start 9a27d4df8de4 | Start 002e8419a874 |                    | Completed 272.99ms | Start a55c66edfc10 |
+| 0.6 |                    | Completed 107.00ms | Completed 116.42ms | Completed 112.30ms |                    |                    | Completed 107.36ms |
+|     |                    |                    |                    |                    |                    |                    | Start a653861a4690 |
+| 0.7 | Start fa6d70f18ea4 | Start 2669de42746b | Start b6e65256111e |                    |                    | Start d8c5ef3ad254 |                    |
+|     | Failed 24.11ms     |                    |                    |                    |                    |                    |                    |
+| 0.8 |                    | Completed 102.64ms | Completed 107.06ms |                    |                    | Completed 107.78ms |                    |
+|     |                    | Start 648e137d3c45 |                    |                    |                    |                    |                    |
+| 0.9 | Start ed23a988ccf4 | Completed 101.15ms |                    |                    |                    | Start 9a87cb75a647 | Completed 269.68ms |
+|     |                    | Start 076495a6e6c5 |                    |                    |                    |                    | Start eb9a41290a6e |
+| 1.0 | Completed 102.25ms | Failed 11.88ms     |                    |                    |                    | Completed 104.38ms | Completed 101.17ms |
+|     |                    |                    |                    |                    |                    | Start 07a800afe916 |                    |
+| 1.1 |                    | Start ef316c775b20 | Start 2bc74d303f26 |                    | Start b32206caf697 | Completed 117.24ms | Start 4d8fdaa24318 |
+| 1.2 |                    | Completed 107.41ms | Completed 108.07ms |                    | Completed 109.38ms |                    | Completed 108.07ms |
+|     |                    |                    |                    |                    | Start 299b576d3fd2 |                    |                    |
+| 1.3 |                    | Start 3a1f0f22dbdd | Start 93e809f00d8b | Start 2f25b765d164 | Completed 110.98ms | Start 7a06e82bb61b |                    |
+| 1.4 |                    | Completed 105.33ms | Completed 110.62ms | Completed 108.32ms |                    | Completed 109.03ms |                    |
+|     |                    |                    |                    |                    |                    | Start 0c69192b58e0 |                    |
+| 1.5 | Start 84e11d60d21b | Start 054d46a770fe | Start df6e10a9af2e |                    | Start ce560b0904e2 | Completed 107.87ms |                    |
+| 1.6 | Completed 106.83ms | Completed 105.62ms | Completed 104.24ms |                    | Completed 111.74ms |                    |                    |
+|     | Start 58a7c636a825 |                    |                    |                    | Start 7fe9ae4b1e57 |                    |                    |
+| 1.7 |                    |                    | Start 0123f65e7f41 |                    | Failed 23.96ms     |                    | Start 4e19fa091780 |
+|     |                    |                    |                    |                    | Start abbfdf6b78c3 |                    |                    |
+| 1.8 | Completed 112.49ms |                    | Completed 122.08ms |                    | Completed 116.37ms |                    | Completed 114.64ms |
+|     | Start 9cea25c5fa35 |                    |                    |                    |                    |                    | Start ef35323820b9 |
+| 1.9 | Completed 100.23ms |                    | Start c08cc4ed7cca |                    |                    |                    | Completed 105.13ms |
+|     | Start 54f685496fa0 |                    |                    |                    |                    |                    |                    |
+|     | Failed 9.77ms      |                    |                    |                    |                    |                    |                    |
+| 2.0 | Start ef49e5d282ee |                    | Completed 111.69ms |                    | Start 10482620ca14 |                    | Start 2d8a0acf7b6a |
+|     |                    |                    |                    |                    |                    |                    | Failed 9.09ms      |
+|     |                    |                    |                    |                    |                    |                    | Start 51bf361c5890 |
+| 2.1 | Completed 107.98ms |                    | Start cce56acda337 |                    | Completed 105.89ms |                    | Completed 106.62ms |
+|     | Start b4891383e0ba |                    |                    |                    |                    |                    |                    |
+| 2.2 | Completed 103.64ms | Start 46b978701933 | Completed 103.90ms |                    |                    |                    | Start 4ed48525ffa6 |
+|     |                    |                    | Start 82ebc9c3d9ab |                    |                    |                    |                    |
+| 2.3 |                    | Completed 105.42ms | Completed 104.58ms |                    |                    |                    |                    |
+|     |                    |                    | Start bb15c4dd3d2f |                    |                    |                    |                    |
+| 2.4 |                    | Start 29f4ce784853 | Completed 106.14ms |                    | Start 117979348a9d |                    | Completed 118.63ms |
+|     |                    |                    |                    |                    |                    |                    | Start ca47c19acf14 |
+| 2.5 |                    | Completed 179.99ms | Start 9587384450ff |                    | Completed 101.33ms |                    | Completed 114.30ms |
+|     |                    |                    |                    |                    | Start fd7b75c78821 |                    |                    |
+|     |                    |                    |                    |                    | Failed 25.20ms     |                    |                    |
+| 2.6 | Start 36a026efe008 | Start 124f5f4bf77b | Completed 113.32ms |                    |                    | Start 8e3bd8d26455 | Start 8a848002e602 |
+|     |                    |                    | Start d2d6ef6b1c0f |                    |                    |                    |                    |
+| 2.7 | Completed 114.86ms | Completed 102.95ms | Completed 114.59ms |                    |                    | Completed 110.57ms | Completed 107.79ms |
+| 2.8 | Start 75fc067d6a14 |                    |                    |                    |                    |                    |                    |
+| 2.9 | Completed 105.08ms | Start 1ca3e2981d5c | Start 98c041b32037 | Start 796b762b2e85 |                    |                    | Start 059cf9e5317c |
+| 3.0 |                    | Completed 137.73ms | Completed 104.88ms | Completed 107.61ms |                    |                    | Completed 103.97ms |
+|     |                    | Start e0deb129e4b3 |                    |                    |                    |                    |                    |
+| 3.1 | Start 988fb6c4869c | Completed 99.69ms  | Start 9553fdb7dcee |                    | Start de30f5ba0d77 |                    | Start 3eaee2905208 |
+| 3.2 | Completed 97.96ms  |                    | Completed 101.75ms |                    | Completed 103.91ms | Start fc3db69f4851 | Completed 99.24ms  |
+|     |                    |                    | Start c2251e951dda |                    | Start 6cd5da722d73 |                    |                    |
+|     |                    |                    |                    |                    | Failed 8.19ms      |                    |                    |
+| 3.3 |                    |                    | Completed 100.30ms |                    | Start f35b5ab5d34e | Completed 107.29ms | Start 4a980884008d |
+|     |                    |                    | Start b229cee99e94 |                    |                    |                    |                    |
+| 3.4 |                    |                    | Completed 102.76ms |                    | Completed 107.12ms |                    | Completed 102.31ms |
+|     |                    |                    |                    |                    |                    |                    | Start d4e375cc95cc |
+| 3.5 | Start 733f1c6dc61d |                    | Start f628bd970bb4 |                    |                    | Start 8cdc803e8378 | Completed 103.06ms |
+|     |                    |                    |                    |                    |                    |                    | Start 2e92c2b43d38 |
+| 3.6 | Completed 107.18ms |                    | Completed 100.66ms |                    |                    |                    | Completed 101.72ms |
+|     |                    |                    | Start 747c480a40ea |                    |                    |                    | Start 04618bf14ad7 |
+| 3.7 | Start 3067e5913f37 |                    | Completed 107.00ms |                    |                    | Completed 166.41ms | Completed 100.28ms |
+|     |                    |                    |                    |                    |                    |                    | Start ec6b0a995dd1 |
+| 3.8 | Completed 108.00ms |                    |                    |                    |                    |                    | Completed 104.90ms |
+|     | Start 4ff833b9fb85 |                    |                    |                    |                    |                    |                    |
+| 3.9 | Completed 109.67ms |                    |                    |                    | Start 18acabaa53b4 | Start 3b4c044b15cd | Start 38babcd561dc |
+|     | Start b1671dc9e3fd |                    |                    |                    | Failed 9.91ms      |                    |                    |
+|     | Failed 13.98ms     |                    |                    |                    |                    |                    |                    |
+| 4.0 |                    | Start 4dc7a6cf9d31 | Start c54e4a8874ae |                    | Start 7e9b178fd1f1 |                    | Completed 104.83ms |
+|     |                    |                    |                    |                    |                    |                    | Start 3ec4576c2679 |
+| 4.1 |                    | Completed 104.66ms |                    |                    | Completed 103.83ms |                    | Completed 102.08ms |
+| 4.2 |                    |                    | Completed 107.08ms |                    |                    | Completed 270.16ms |                    |
+|     |                    |                    |                    |                    |                    | Start eb7e6d231949 |                    |
+| 4.3 |                    | Start c98480c008c4 | Start 65fbd1afd278 |                    | Start ef94208e1de5 | Completed 102.28ms | Start 84c65cbcaba9 |
+| 4.4 |                    | Completed 101.15ms | Completed 102.84ms |                    | Completed 103.71ms |                    | Completed 105.54ms |
+|     |                    |                    |                    |                    | Start 1352e0584304 |                    | Start 83b1860daf09 |
+| 4.5 |                    |                    |                    |                    |                    |                    | Failed 31.43ms     |
+|     |                    |                    |                    |                    |                    |                    | Start 4c79212bad57 |
+| 4.6 | Start e5e0ee62ce2b |                    | Start cfc5dfa972b7 |                    | Completed 129.44ms |                    |                    |
+|     |                    |                    |                    |                    | Start 7fbdd3139bd2 |                    |                    |
+| 4.7 | Completed 109.63ms |                    | Completed 113.56ms |                    |                    |                    |                    |
+| 4.8 |                    |                    |                    |                    |                    |                    | Completed 220.53ms |
+| 4.9 |                    |                    |                    |                    |                    |                    |                    |
+| 5.0 |                    |                    |                    |                    | Completed 392.59ms |                    |                    |
++-----+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+--------------------+
