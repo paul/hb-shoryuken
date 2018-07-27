@@ -1,0 +1,65 @@
+
+# Honeybadger Throttling investigation
+
+I set up a Shoryuken worker "FailingWorker" that takes a single argument like
+`"foo:1"`, and fails whenever that job index is `2`. Another script
+(`enqueue.rb`) enqueues a set number of jobs with an incrementing index.
+Honeybadger is set up to report errors to `http://localhost:9393`, and there
+are two rackup files that can be used to emulate honeybadger success (`201`) or
+throttling (`429`).
+
+## Results
+
+When Honeybadger responds normally, the Shoryuken runner processes the jobs
+extremely quickly, 50-100ms, including the failures. When honeybadger is in a
+throttling state, it initially processes the jobs quickly, but as more failures
+happen, the throttling increases (as it should). However, the problem is that
+when Honeybadger is waiting for the throttling to expire, *all other shoryuken
+worker threads are blocked*, even the ones processing successful jobs that
+don't report an error.
+
+I've generated two log files, `normal.log` and `throttle.log` demonstrating
+this behavior. Also are two "timelines", showing the start and finish times for
+each job, grouped by shoruyken worker Thread ID.
+
+`normal_timeline.mkd` shows that when not being throttled, each job completes
+in about the same amount if time, and the workers spend very little time idle,
+and all 110 jobs are completed in ~5 seconds.
+
+`throttle_timeline.mkd` shows the first set of jobs proceeds normally, but then
+once the first failure hits (TID `TID-gt5zv1l7k` at _t=0.5-1.8_), *all* of the
+threads end up waiting for the 1.25s Honeybadger timeout. As more failures
+happen, and the throttle limit increases, you can see that every worker thread
+is stuck waiting for the ever-increasing timeout. Towards the end of the run
+(_t=36_), you can see that when not blocked by Honeybadger, the regular jobs
+process at the same rate, but then the final failures at _t=36.9_ for TID
+`TID-gt5zv3rdg` and `TID-gt5zv1d6o` block the last two successful jobs for over
+20 seconds.
+
+
+## To reproduce:
+
+1. Create the SQS queue. Shoryken can help:
+
+```
+$ shoryuken sqs create test-hb-deadlock
+```
+
+2. Start a one of the fake honeybadger rack files. `201.ru` pretends everything is fine, `429.ru` pretends that you're being throttled.
+
+```
+$ puma 201.ru
+```
+
+3. In another terminal, enqueue a bunch of jobs. I used GNU `parallel` and `seq`, this will enqueue ~100 jobs.
+
+```
+$ seq 100 10 200 | parallel ruby enqueue.rb 10 {}
+```
+
+4. Start the shoryuken workers:
+
+```
+$ shoryuken -v -c 5 -q test-hb-deadlock -r ./failing_worker.rb | tee normal.log
+```
+
